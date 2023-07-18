@@ -1,0 +1,2 @@
+E:\MMORPG_Inflearn\Libraries\Debug\ServerCore.pdb
+E:\MMORPG_Inflearn\ServerCore\x64\Debug\ServerCore.pdb

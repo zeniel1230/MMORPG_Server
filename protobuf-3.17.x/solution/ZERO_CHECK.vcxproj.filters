@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\e7c2aa3588daaa4b5047d50b37db62c7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B07DDE53-5452-3B93-9C05-3F77F13B08D6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

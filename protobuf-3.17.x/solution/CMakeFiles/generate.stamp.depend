@@ -1,0 +1,44 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/CMakeLists.txt
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/extract_includes.bat.in
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/install.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/libprotobuf-lite.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/libprotobuf.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/libprotoc.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf-config-version.cmake.in
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf-config.cmake.in
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf-lite.pc.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf-module.cmake.in
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf-options.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protobuf.pc.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/protoc.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/version.rc.in
+E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/3.17.1/CMakeCCompiler.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/3.17.1/CMakeCXXCompiler.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/3.17.1/CMakeRCCompiler.cmake
+E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/3.17.1/CMakeSystem.cmake
