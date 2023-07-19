@@ -1,7 +1,5 @@
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/protoc.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/libprotobuf-lite.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/libprotoc.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/libprotobuf.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/INSTALL.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/ALL_BUILD.dir
-E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/ZERO_CHECK.dir
+E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/libprotobuf-lite.dir
+E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/libprotobuf.dir
+E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/INSTALL.dir
+E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/ALL_BUILD.dir
+E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/ZERO_CHECK.dir

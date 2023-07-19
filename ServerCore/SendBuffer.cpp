@@ -81,14 +81,14 @@ SendBufferRef SendBufferManager::Open(uint32 _size)
 		LSendBufferChunk->Reset();
 	}
 
-	cout << "FREE : " << LSendBufferChunk->FreeSize() << endl;
+	//cout << "FREE : " << LSendBufferChunk->FreeSize() << endl;
 
 	return LSendBufferChunk->Open(_size);
 }
 
 SendBufferChunkRef SendBufferManager::Pop()
 {
-	cout << "Pop SENDBUFFERCHUNK" << endl;
+	//cout << "Pop SENDBUFFERCHUNK" << endl;
 
 	{
 		WRITE_LOCK;
@@ -111,7 +111,7 @@ void SendBufferManager::Push(SendBufferChunkRef _buffer)
 
 void SendBufferManager::PushGlobal(SendBufferChunk* _buffer)
 {
-	cout << "PushGlobal SENDBUFFERCHUNK" << endl;
+	//cout << "PushGlobal SENDBUFFERCHUNK" << endl;
 
 	GSendBufferManager->Push(SendBufferChunkRef(_buffer, PushGlobal));
 }

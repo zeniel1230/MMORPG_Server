@@ -22,31 +22,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7A7CF1CB-A8A5-3F0B-83D8-0B515806BB95}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{61C7F02D-DE93-31D8-9B55-CC82805A499F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>libprotobuf-lite</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
@@ -59,38 +59,29 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobuf-lite.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobuf-lited</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\Release\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf-lite.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf-lite</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\MinSizeRel\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotobuf-lite.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotobuf-lite</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\RelWithDebInfo\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotobuf-lite.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotobuf-lite</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -102,41 +93,30 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/Debug/libprotobuf-lited.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/Debug/libprotobuf-lited.pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -147,43 +127,32 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/Release/libprotobuf-lite.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/Release/libprotobuf-lite.pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -194,43 +163,32 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/MinSizeRel/libprotobuf-lite.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/MinSizeRel/libprotobuf-lite.pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4018;4065;4146;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -242,40 +200,31 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PROTOBUF_USE_DLLS;LIBPROTOBUF_EXPORTS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";libprotobuf_lite_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MMORPG_Inflearn\protobuf-3.17.x\solution;E:\MMORPG_Inflearn\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\MMORPG_Server\protobuf-3.17.x\solution;E:\MMORPG_Server\protobuf-3.17.x\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/RelWithDebInfo/libprotobuf-lite.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MMORPG_Inflearn/protobuf-3.17.x/solution/RelWithDebInfo/libprotobuf-lite.pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
+    <CustomBuild Include="E:\MMORPG_Server\protobuf-3.17.x\cmake\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/MMORPG_Server/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Inflearn/protobuf-3.17.x/cmake -BE:/MMORPG_Inflearn/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Server/protobuf-3.17.x/cmake -BE:/MMORPG_Server/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -283,12 +232,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCXXCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeRCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/MMORPG_Server/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Inflearn/protobuf-3.17.x/cmake -BE:/MMORPG_Inflearn/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Server/protobuf-3.17.x/cmake -BE:/MMORPG_Server/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -296,12 +245,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCXXCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeRCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/MMORPG_Server/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Inflearn/protobuf-3.17.x/cmake -BE:/MMORPG_Inflearn/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Server/protobuf-3.17.x/cmake -BE:/MMORPG_Server/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -309,12 +258,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCXXCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeRCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/MMORPG_Inflearn/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/MMORPG_Server/protobuf-3.17.x/cmake/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Inflearn/protobuf-3.17.x/cmake -BE:/MMORPG_Inflearn/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Inflearn/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/MMORPG_Server/protobuf-3.17.x/cmake -BE:/MMORPG_Server/protobuf-3.17.x/solution --check-stamp-file E:/MMORPG_Server/protobuf-3.17.x/solution/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -322,71 +271,71 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\libprotoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\protoc.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\3.17.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MMORPG_Inflearn\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\extract_includes.bat.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\install.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf-lite.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\libprotobuf.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config-version.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-config.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-lite.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-module.cmake.in;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf-options.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\protobuf.pc.cmake;E:\MMORPG_Server\protobuf-3.17.x\cmake\version.rc.in;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeCXXCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeRCCompiler.cmake;E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\3.27.0-rc5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\MMORPG_Server\protobuf-3.17.x\solution\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\any_lite.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arena.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arenastring.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\extension_set.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\field_access_listener.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_enum_util.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_table_driven_lite.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_util.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\coded_stream.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\io_win32.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\strtod.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\map.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\message_lite.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\parse_context.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\repeated_field.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\common.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\int128.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\status.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\statusor.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\structurally_valid.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\strutil.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\time.cc" />
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\wire_format_lite.cc" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arena.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arenastring.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\extension_set.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_util.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\parse_context.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\coded_stream.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\strtod.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\message_lite.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\repeated_field.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\common.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\int128.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\once.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\status.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\statusor.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\strutil.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\time.h" />
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\wire_format_lite.h" />
-    <ResourceCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\solution\version.rc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\any_lite.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arena.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arenastring.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\extension_set.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\field_access_listener.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_enum_util.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_table_driven_lite.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\io_win32.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\map.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\message_lite.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\parse_context.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\common.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\statusor.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\time.cc" />
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\wire_format_lite.cc" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arena.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arenastring.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\extension_set.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_util.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\parse_context.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\coded_stream.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\strtod.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\message_lite.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\repeated_field.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\common.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\int128.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\once.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\status.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\statusor.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\strutil.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\time.h" />
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\wire_format_lite.h" />
+    <ResourceCompile Include="E:\MMORPG_Server\protobuf-3.17.x\solution\version.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\MMORPG_Inflearn\protobuf-3.17.x\solution\ZERO_CHECK.vcxproj">
-      <Project>{8AD30A51-99D2-3EB9-9FC2-040A156B702D}</Project>
+    <ProjectReference Include="E:\MMORPG_Server\protobuf-3.17.x\solution\ZERO_CHECK.vcxproj">
+      <Project>{685AB2C1-EFD6-3BC3-A438-77C620D97F6C}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

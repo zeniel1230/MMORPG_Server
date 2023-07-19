@@ -10,28 +10,36 @@ bool Handle_INVALID(PacketSessionRef& _session, BYTE* _buffer, int32 _len)
 	return false;
 }
 
-bool Handle_S_TEST(PacketSessionRef& session, Protocol::S_TEST& pkt)
+bool Handle_S_LOGIN(PacketSessionRef& _session, Protocol::S_LOGIN& _pkt)
 {
-	cout << pkt.id() << " " << pkt.hp() << " " << pkt.attack() << endl;
+	if (_pkt.success() == false)
+		return true;
 
-	cout << "BUFSIZE : " << pkt.buffs_size() << endl;
-
-	for (auto& buf : pkt.buffs())
+	if (_pkt.players().size() == 0)
 	{
-		cout << "BUFINFO : " << buf.buffid() << " " << buf.remaintime() << endl;
-		cout << "VICTIMS : " << buf.victims_size() << endl;
-		for (auto& vic : buf.victims())
-		{
-			cout << vic << " ";
-		}
-
-		cout << endl;
+		// 캐릭터가 없으므로 캐릭터 생성하는 로직
 	}
 
+	// 입장 UI 버튼 눌러서 게임 입장
+	Protocol::C_ENTER_GAME enterGamePkt;
+	enterGamePkt.set_playerindex(0); // 첫번째 캐릭터로 입장
+	auto sendBuffer = ServerPacketHandler::MakeSendBuffer(enterGamePkt);
+	_session->Send(sendBuffer);
+
 	return true;
 }
 
-bool Handle_S_LOGIN(PacketSessionRef& session, Protocol::S_LOGIN& pkt)
+bool Handle_S_ENTER_GAME(PacketSessionRef& _session, Protocol::S_ENTER_GAME& _pkt)
 {
+	// TODO
+
 	return true;
 }
+
+bool Handle_S_CHAT(PacketSessionRef& _session, Protocol::S_CHAT& _pkt)
+{
+	std::cout << _pkt.msg() << endl;
+
+	return true;
+}
+

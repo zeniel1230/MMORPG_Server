@@ -22,6 +22,15 @@ void Service::CloseService()
 	// TODO
 }
 
+void Service::Broadcast(SendBufferRef _sendBuffer)
+{
+	WRITE_LOCK;
+	for (const auto& session : m_sessions)
+	{
+		session->Send(_sendBuffer);
+	}
+}
+
 SessionRef Service::CreateSession()
 {
 	SessionRef session = m_sessionFactory();

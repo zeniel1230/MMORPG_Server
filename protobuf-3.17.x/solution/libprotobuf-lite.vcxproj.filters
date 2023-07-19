@@ -1,185 +1,185 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\any_lite.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\any_lite.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arena.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arena.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arenastring.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arenastring.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\extension_set.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\extension_set.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\field_access_listener.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\field_access_listener.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_enum_util.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_enum_util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_table_driven_lite.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_table_driven_lite.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_util.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\coded_stream.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\coded_stream.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\io_win32.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\io_win32.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\strtod.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\strtod.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\map.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\map.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\message_lite.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\message_lite.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\parse_context.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\parse_context.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\repeated_field.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\repeated_field.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\common.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\common.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\int128.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\int128.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\status.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\status.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\statusor.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\statusor.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\structurally_valid.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\structurally_valid.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\strutil.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\strutil.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\time.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\time.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\wire_format_lite.cc">
+    <ClCompile Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\wire_format_lite.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arena.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arena.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\arenastring.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\arenastring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\extension_set.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\extension_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\generated_message_util.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\generated_message_util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\implicit_weak_message.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\parse_context.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\parse_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\coded_stream.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\coded_stream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\strtod.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\strtod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\io\zero_copy_stream_impl_lite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\message_lite.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\message_lite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\repeated_field.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\repeated_field.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\bytestream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\common.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\int128.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\int128.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\once.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\once.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\status.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\status.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\statusor.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\statusor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringpiece.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\stringprintf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\strutil.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\strutil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\stubs\time.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\stubs\time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MMORPG_Inflearn\protobuf-3.17.x\src\google\protobuf\wire_format_lite.h">
+    <ClInclude Include="E:\MMORPG_Server\protobuf-3.17.x\src\google\protobuf\wire_format_lite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\MMORPG_Inflearn\protobuf-3.17.x\cmake\CMakeLists.txt" />
+    <CustomBuild Include="E:\MMORPG_Server\protobuf-3.17.x\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="E:\MMORPG_Inflearn\protobuf-3.17.x\solution\version.rc">
+    <ResourceCompile Include="E:\MMORPG_Server\protobuf-3.17.x\solution\version.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{A0446F20-8456-3929-9E25-BDADA2A43AB4}</UniqueIdentifier>
+      <UniqueIdentifier>{2E3D2992-5A63-3B2D-9BAE-40D002FABF45}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{01111697-0410-3F68-BEC8-EFBFEA035B10}</UniqueIdentifier>
+      <UniqueIdentifier>{D164302B-50B3-33C5-BD5B-27AF8266C76B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

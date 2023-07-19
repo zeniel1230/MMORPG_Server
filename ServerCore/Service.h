@@ -41,6 +41,7 @@ public:
 	virtual void		CloseService();
 	void				SetSessionFactory(SessionFactory _func) { m_sessionFactory = _func; }
 
+	void				Broadcast(SendBufferRef _sendBuffer);
 	SessionRef			CreateSession();
 	void				AddSession(SessionRef _session);
 	void				ReleaseSession(SessionRef _session);

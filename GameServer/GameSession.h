@@ -4,6 +4,9 @@
 class GameSession : public PacketSession
 {
 public:
+	Vector<PlayerRef> m_players;
+
+public:
 	~GameSession()
 	{
 		cout << "~GameSession" << endl;
