@@ -73,8 +73,10 @@ bool Handle_C_ENTER_GAME(PacketSessionRef& _session, Protocol::C_ENTER_GAME& _pk
 	// TODO : Validation
 
 	PlayerRef player = gameSession->m_players[index]; // 아직은 READ_ONLY
-	GRoom.Enter(player); // WRITE_LOCK
+	
+	GRoom.PushJob(MakeShared<EnterJob>(GRoom, player));
 
+	// 추후 Jobqueue에서 해당 패킷 실행 완료 후 Send하도록 변경
 	Protocol::S_ENTER_GAME enterGamePkt;
 	enterGamePkt.set_success(true);
 	auto sendBuffer = ClientPacketHandler::MakeSendBuffer(enterGamePkt);
@@ -91,7 +93,7 @@ bool Handle_C_CHAT(PacketSessionRef& _session, Protocol::C_CHAT& _pkt)
 	chatPkt.set_msg(_pkt.msg());
 	auto sendBuffer = ClientPacketHandler::MakeSendBuffer(chatPkt);
 
-	GRoom.Broadcast(sendBuffer); // WRITE_LOCK
+	GRoom.PushJob(MakeShared<BroadcastJob>(GRoom, sendBuffer));
 
 	return true;
 }
