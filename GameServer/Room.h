@@ -1,12 +1,10 @@
 #pragma once
-#include "Job.h"
+#include "JobSerializer.h"
 
-class Room
+class Room : public JobSerializer
 {
 private:
 	map<uint64, PlayerRef> m_players;
-
-	JobQueue m_jobs;
 
 	// 직접 접근 불가능하도록 private
 public:
@@ -17,14 +15,7 @@ public:
 
 public:
 	// 멀티쓰레드 환경에서는 job으로 접근시켜야함
-	void FlushJob();
-
-	template<typename T, typename Ret, typename... Args>
-	void PushJob(Ret(T::* _memFunc)(Args...), Args... _args)
-	{
-		auto job = MakeShared<MemberJob<T, Ret, Args...>>(static_cast<T*>(this), _memFunc, _args...);
-		m_jobs.Push(job);
-	}
+	virtual void FlushJob() override;
 };
 
-extern Room GRoom;
+extern shared_ptr<Room> GRoom;
