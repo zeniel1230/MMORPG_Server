@@ -10,9 +10,9 @@ enum class ServiceType : uint8
 	Client
 };
 
-/*----------------------------
-			Service
-------------------------------*/
+/*-------------
+	Service
+--------------*/
 
 using SessionFactory = function<SessionRef(void)>;
 
@@ -20,7 +20,6 @@ class Service : public enable_shared_from_this<Service>
 {
 protected:
 	USE_LOCK;
-
 	ServiceType			m_type;
 	NetAddress			m_netAddress = {};
 	IocpCoreRef			m_iocpCore;
@@ -31,8 +30,7 @@ protected:
 	SessionFactory		m_sessionFactory;
 
 public:
-	Service(ServiceType _type, NetAddress _address, IocpCoreRef _core, 
-		SessionFactory _factory, int32 _maxSessionCount = 1);
+	Service(ServiceType _type, NetAddress _address, IocpCoreRef _core, SessionFactory _factory, int32 _maxSessionCount = 1);
 	virtual ~Service();
 
 	virtual bool		Start() abstract;
@@ -54,9 +52,9 @@ public:
 	IocpCoreRef&		GetIocpCore() { return m_iocpCore; }
 };
 
-/*----------------------------
-		 ClientService
-------------------------------*/
+/*-----------------
+	ClientService
+------------------*/
 
 class ClientService : public Service
 {
@@ -68,9 +66,9 @@ public:
 };
 
 
-/*----------------------------
-		 ServerService
-------------------------------*/
+/*-----------------
+	ServerService
+------------------*/
 
 class ServerService : public Service
 {

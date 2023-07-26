@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "SocketUtils.h"
 
+/*----------------------------
+		  SocketUtils
+------------------------------*/
+
 LPFN_CONNECTEX		SocketUtils::ConnectEx = nullptr;
 LPFN_DISCONNECTEX	SocketUtils::DisConnectEx = nullptr;
 LPFN_ACCEPTEX		SocketUtils::AcceptEx = nullptr;
@@ -9,7 +13,7 @@ void SocketUtils::Init()
 {
 	WSADATA wsaData;
 	ASSERT_CRASH(::WSAStartup(MAKEWORD(2, 2), OUT & wsaData) == 0);
-	
+
 	// 런타임에 주소 얻어오는 API
 	SOCKET dummySocket = CreateSocket();
 	ASSERT_CRASH(BindWindowsFunction(dummySocket,
@@ -74,7 +78,7 @@ bool SocketUtils::SetUpdateAcceptSocket(SOCKET _socket, SOCKET _listenSocket)
 
 bool SocketUtils::Bind(SOCKET& _socket, NetAddress _netAddr)
 {
-	return SOCKET_ERROR != ::bind(_socket, 
+	return SOCKET_ERROR != ::bind(_socket,
 		reinterpret_cast<const SOCKADDR*>(&_netAddr.GetSockAddr()), sizeof(SOCKADDR_IN));
 }
 
@@ -85,7 +89,7 @@ bool SocketUtils::BindAnyAddress(SOCKET& _socket, uint16 _port)
 	myAddress.sin_addr.s_addr = ::htonl(INADDR_ANY);
 	myAddress.sin_port = ::htons(_port);
 
-	return SOCKET_ERROR != ::bind(_socket, 
+	return SOCKET_ERROR != ::bind(_socket,
 		reinterpret_cast<const SOCKADDR*>(&myAddress), sizeof(myAddress));
 }
 
@@ -96,7 +100,7 @@ bool SocketUtils::Listen(SOCKET& _socket, int32 _backlog)
 
 void SocketUtils::Close(SOCKET& _socket)
 {
-	if(_socket != INVALID_SOCKET)
+	if (_socket != INVALID_SOCKET)
 		::closesocket(_socket);
 
 	_socket = INVALID_SOCKET;

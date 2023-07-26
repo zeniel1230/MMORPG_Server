@@ -8,20 +8,20 @@ class SendBufferChunk;
 
 class SendBuffer
 {
-public:
-	SendBuffer(SendBufferChunkRef _owner, BYTE* _buffer, uint32 _allocSize);
-	~SendBuffer();
-
-	BYTE*	Buffer() { return m_buffer; }
-	uint32	AllocSize() { return m_allocSize; }
-	uint32	WriteSize() { return m_writeSize; }
-	void	Close(uint32 _writeSize);
-
 private:
 	BYTE*				m_buffer;
 	uint32				m_allocSize = 0;
 	uint32				m_writeSize = 0;
 	SendBufferChunkRef	m_owner;
+
+public:
+	SendBuffer(SendBufferChunkRef _owner, BYTE* _buffer, uint32 _allocSize);
+	~SendBuffer();
+
+	BYTE*		Buffer() { return m_buffer; }
+	uint32		AllocSize() { return m_allocSize; }
+	uint32		WriteSize() { return m_writeSize; }
+	void		Close(uint32 _writeSize);
 };
 
 /*----------------------------
@@ -48,9 +48,9 @@ public:
 	SendBufferRef		Open(uint32 _allocSize);
 	void				Close(uint32 _writeSize);
 
-	bool				IsOpen()	{ return m_open; }
-	BYTE*				Buffer()	{ return &m_buffer[m_usedSize]; }
-	uint32				FreeSize()	{ return static_cast<uint32>(m_buffer.size()) - m_usedSize; }
+	bool				IsOpen() { return m_open; }
+	BYTE*				Buffer() { return &m_buffer[m_usedSize]; }
+	uint32				FreeSize() { return static_cast<uint32>(m_buffer.size()) - m_usedSize; }
 };
 
 /*----------------------------

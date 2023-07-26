@@ -1,6 +1,7 @@
 ﻿#include "pch.h"
 #include "ThreadManager.h"
 #include "Service.h"
+#include "Session.h"
 #include "GameSession.h"
 #include "GameSessionManager.h"
 #include "BufferWriter.h"
@@ -9,20 +10,6 @@
 #include "Protocol.pb.h"
 #include "Job.h"
 #include "Room.h"
-
-void HealByValue(int64 target, int32 value)
-{
-	cout << target << "한테 힐" << value << "만큼 줌" << endl;
-}
-
-class Knight
-{
-public:
-	void HealMe(int32 value)
-	{
-		cout << "HealMe! " << value << endl;
-	}
-};
 
 int main()
 {

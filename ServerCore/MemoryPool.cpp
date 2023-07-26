@@ -14,13 +14,6 @@ MemoryPool::~MemoryPool()
 		// null이 아니면
 		::_aligned_free(memory);
 	}
-
-	/*while (m_queue.empty() == false)
-	{
-		MemoryHeader* header = m_queue.front();
-		m_queue.pop();
-		::free(header);
-	}*/
 }
 
 void MemoryPool::Push(MemoryHeader* _ptr)

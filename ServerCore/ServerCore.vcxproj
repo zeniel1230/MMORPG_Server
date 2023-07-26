@@ -158,15 +158,12 @@
     <ClInclude Include="Allocator.h" />
     <ClInclude Include="BufferReader.h" />
     <ClInclude Include="BufferWriter.h" />
-    <ClInclude Include="ConditionVariable.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="CoreGlobal.h" />
     <ClInclude Include="CoreMacro.h" />
     <ClInclude Include="CorePch.h" />
     <ClInclude Include="CoreTLS.h" />
     <ClInclude Include="DeadLockProfiler.h" />
-    <ClInclude Include="EventLock.h" />
-    <ClInclude Include="Future.h" />
     <ClInclude Include="IocpCore.h" />
     <ClInclude Include="IocpEvent.h" />
     <ClInclude Include="Job.h" />
@@ -175,7 +172,6 @@
     <ClInclude Include="Listener.h" />
     <ClInclude Include="Lock.h" />
     <ClInclude Include="Memory.h" />
-    <ClInclude Include="MemoryModel.h" />
     <ClInclude Include="MemoryPool.h" />
     <ClInclude Include="NetAddress.h" />
     <ClInclude Include="ObjectPool.h" />
@@ -186,11 +182,8 @@
     <ClInclude Include="Service.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="SocketUtils.h" />
-    <ClInclude Include="SpinLock.h" />
-    <ClInclude Include="ThreadLocalStorage.h" />
     <ClInclude Include="ThreadManager.h" />
     <ClInclude Include="TypeCast.h" />
-    <ClInclude Include="TypeCastStudy.h" />
     <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
@@ -217,7 +210,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="primeCount.cpp" />
     <ClCompile Include="RecvBuffer.cpp" />
     <ClCompile Include="RefCounting.cpp" />
     <ClCompile Include="SendBuffer.cpp" />

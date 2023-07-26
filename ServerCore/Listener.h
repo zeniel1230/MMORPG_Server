@@ -35,4 +35,3 @@ private:
 	void RegisterAccept(AcceptEvent* _acceptEvent);
 	void ProcessAccept(AcceptEvent* _acceptEvent);
 };
-

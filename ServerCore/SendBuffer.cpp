@@ -70,7 +70,7 @@ SendBufferRef SendBufferManager::Open(uint32 _size)
 	{
 		LSendBufferChunk = Pop(); // WRITE_LOCK
 		LSendBufferChunk->Reset();
-	}
+	}		
 
 	ASSERT_CRASH(LSendBufferChunk->IsOpen() == false);
 
@@ -111,7 +111,7 @@ void SendBufferManager::Push(SendBufferChunkRef _buffer)
 
 void SendBufferManager::PushGlobal(SendBufferChunk* _buffer)
 {
-	//cout << "PushGlobal SENDBUFFERCHUNK" << endl;
+	cout << "PushGlobal SENDBUFFERCHUNK" << endl;
 
 	GSendBufferManager->Push(SendBufferChunkRef(_buffer, PushGlobal));
 }

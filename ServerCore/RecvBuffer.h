@@ -1,8 +1,9 @@
 #pragma once
 
-/*----------------------------	
+/*----------------------------
 		  RecvBuffer
 ------------------------------*/
+
 
 class RecvBuffer
 {
@@ -23,9 +24,9 @@ public:
 	bool			OnRead(int32 _numOfBytes);
 	bool			OnWrite(int32 _numOfBytes);
 
-	BYTE*			ReadPos()	{ return &m_buffer[m_readPos]; }
-	BYTE*			WritePos()	{ return &m_buffer[m_writePos]; }
-	int32			DataSize()	{ return m_writePos - m_readPos; }
-	int32			FreeSize()	{ return m_capacity - m_writePos; }
+	BYTE*			ReadPos() { return &m_buffer[m_readPos]; }
+	BYTE*			WritePos() { return &m_buffer[m_writePos]; }
+	int32			DataSize() { return m_writePos - m_readPos; }
+	int32			FreeSize() { return m_capacity - m_writePos; }
 };
 

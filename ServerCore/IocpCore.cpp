@@ -2,6 +2,10 @@
 #include "IocpCore.h"
 #include "IocpEvent.h"
 
+/*----------------------------
+		  IocpCore
+------------------------------*/
+
 IocpCore::IocpCore()
 {
 	m_iocpHandle = ::CreateIoCompletionPort(INVALID_HANDLE_VALUE, 0, 0, 0);
@@ -24,7 +28,7 @@ bool IocpCore::Dispatch(uint32 _timeoutMs)
 	ULONG_PTR key = 0;
 	IocpEvent* iocpEvent = nullptr;
 
-	if (::GetQueuedCompletionStatus(m_iocpHandle, OUT & numOfBytes, OUT &key,
+	if (::GetQueuedCompletionStatus(m_iocpHandle, OUT & numOfBytes, OUT & key,
 		OUT reinterpret_cast<LPOVERLAPPED*>(&iocpEvent), _timeoutMs))
 	{
 		IocpObjectRef iocpObject = iocpEvent->m_owner;

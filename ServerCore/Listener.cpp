@@ -5,9 +5,9 @@
 #include "Session.h"
 #include "Service.h"
 
-/*--------------
-	Listener
----------------*/
+/*----------------------------
+		   Listener
+------------------------------*/
 
 Listener::~Listener()
 {
@@ -84,9 +84,9 @@ void Listener::RegisterAccept(AcceptEvent* _acceptEvent)
 	_acceptEvent->m_session = session;
 
 	DWORD bytesReceived = 0;
-	if (false == SocketUtils::AcceptEx(m_socket, 
-		session->GetSocket(), session->m_recvBuffer.WritePos(), 0, 
-		sizeof(SOCKADDR_IN) + 16, sizeof(SOCKADDR_IN) + 16, 
+	if (false == SocketUtils::AcceptEx(m_socket,
+		session->GetSocket(), session->m_recvBuffer.WritePos(), 0,
+		sizeof(SOCKADDR_IN) + 16, sizeof(SOCKADDR_IN) + 16,
 		OUT & bytesReceived, static_cast<LPOVERLAPPED>(_acceptEvent)))
 	{
 		const int32 errorCode = ::WSAGetLastError();
@@ -110,7 +110,7 @@ void Listener::ProcessAccept(AcceptEvent* acceptEvent)
 
 	SOCKADDR_IN sockAddress;
 	int32 sizeOfSockAddr = sizeof(sockAddress);
-	if (SOCKET_ERROR == ::getpeername(session->GetSocket(), 
+	if (SOCKET_ERROR == ::getpeername(session->GetSocket(),
 		OUT reinterpret_cast<SOCKADDR*>(&sockAddress), &sizeOfSockAddr))
 	{
 		RegisterAccept(acceptEvent);

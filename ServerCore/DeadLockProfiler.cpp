@@ -67,7 +67,7 @@ void DeadLockProfiler::CheckCycle()
 	m_parent = vector<int32>(lockCount, -1);
 
 	for (int32 lockId = 0; lockId < lockCount; lockId++)
-		DFS(lockId);
+		Dfs(lockId);
 
 	// 연산이 끝났으면 정리한다.
 	m_discoveredOrder.clear();
@@ -75,18 +75,18 @@ void DeadLockProfiler::CheckCycle()
 	m_parent.clear();
 }
 
-void DeadLockProfiler::DFS(int32 _here)
+void DeadLockProfiler::Dfs(int32 _index)
 {
-	if (m_discoveredOrder[_here] != -1)
+	if (m_discoveredOrder[_index] != -1)
 		return;
 
-	m_discoveredOrder[_here] = m_discoveredCount++;
+	m_discoveredOrder[_index] = m_discoveredCount++;
 
 	// 모든 인접한 정점을 순회한다.
-	auto findIt = m_lockHistory.find(_here);
+	auto findIt = m_lockHistory.find(_index);
 	if (findIt == m_lockHistory.end())
 	{
-		m_finished[_here] = true;
+		m_finished[_index] = true;
 		return;
 	}
 
@@ -96,22 +96,22 @@ void DeadLockProfiler::DFS(int32 _here)
 		// 아직 방문한 적이 없다면 방문한다.
 		if (m_discoveredOrder[there] == -1)
 		{
-			m_parent[there] = _here;
-			DFS(there);
+			m_parent[there] = _index;
+			Dfs(there);
 			continue;
 		}
 
 		// _here가 there보다 먼저 발견되었다면, there는 _here의 후손이다. (순방향 간선)
-		if (m_discoveredOrder[_here] < m_discoveredOrder[there])
+		if (m_discoveredOrder[_index] < m_discoveredOrder[there])
 			continue;
 
 		// 순방향이 아니다.
 		// DFS(there)가 아직 종료하지 않았다면, there는 _here의 선조이다. (역방향 간선)
 		if (m_finished[there] == false)
 		{
-			printf("%s -> %s \n", m_idToName[_here], m_idToName[there]);
+			printf("%s -> %s \n", m_idToName[_index], m_idToName[there]);
 
-			int32 now = _here;
+			int32 now = _index;
 			while (true)
 			{
 				printf("%s -> %s \n", m_idToName[m_parent[now]], m_idToName[now]);
@@ -124,5 +124,5 @@ void DeadLockProfiler::DFS(int32 _here)
 		}
 	}
 
-	m_finished[_here] = true;
+	m_finished[_index] = true;
 }

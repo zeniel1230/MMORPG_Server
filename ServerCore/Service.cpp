@@ -45,7 +45,6 @@ SessionRef Service::CreateSession()
 void Service::AddSession(SessionRef _session)
 {
 	WRITE_LOCK;
-
 	m_sessionCount++;
 	m_sessions.insert(_session);
 }

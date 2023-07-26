@@ -36,14 +36,13 @@ public:
 };
 
 template<typename T>
-inline T* BufferWriter::Reserve(uint16 _count)
+T* BufferWriter::Reserve(uint16 _count)
 {
-	if (FreeSize() < sizeof(T) * _count)
+	if (FreeSize() < (sizeof(T) * _count))
 		return nullptr;
 
 	T* ret = reinterpret_cast<T*>(&m_buffer[m_pos]);
-	m_pos += sizeof(T) * _count;
-
+	m_pos += (sizeof(T) * _count);
 	return ret;
 }
 
@@ -52,12 +51,9 @@ inline T* BufferWriter::Reserve(uint16 _count)
 // 오른값이면 T&&
 // 로 바뀜
 template<typename T>
-inline BufferWriter& BufferWriter::operator<<(T&& _src)
+BufferWriter& BufferWriter::operator<<(T&& _src)
 {
-	ASSERT_CRASH(FreeSize() >= sizeof(T));
-
 	using DataType = std::remove_reference_t<T>;
-
 	*reinterpret_cast<DataType*>(&m_buffer[m_pos]) = std::forward<DataType>(_src);
 	m_pos += sizeof(T);
 	return *this;
